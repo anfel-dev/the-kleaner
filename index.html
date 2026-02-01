@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Kleaner | Cleaning Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/componenets.css">
+</head>
+<body>
+    <!-- navbar section -->
+    <nav class="navbar">
+        <div class="logo">THE <span>KLEANER</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact-form" class="nav-btn">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- header/hero section -->
+    <header class="hero" id="hero">
+        <div class="hero-text">
+            <h1>Professional Cleaning Services You Can Trust</h1>
+            <p>THE KLEANER is a professional cleaning company based in the USA, offering reliable and high-quality cleaning services for homes and businesses.</p>
+            <button>Contact Us</button>
+            <button>Services</button>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero.jpg" alt="Cleaning service">
+        </div>
+    </header>
+
+    <!-- services section -->
+    <section id="services">
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+            <div class="service-card">
+                <img src="images/high-access-service.jpg" alt="">
+                <h3>High Access Cleaning</h3>
+                <p>Any building or structure with more than two stories requires specialized cleaning techniques and equipment to ensure safety and quality results.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/office-service.jpg" alt="">
+                <h3>Office Cleaning</h3>
+                <p>Professional cleaning services for offices to maintain a modern, clean, and comfortable working environment.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/house-service.jpg" alt="house cleaning">
+                <h3>House Cleaning</h3>
+                <p>Complete house cleaning covering all essential areas, using the right products for detailed and safe results.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/clinic-service.jpg" alt="clinic cleaning">
+                <h3>Hospitals & Clinics Cleaning</h3>
+                <p>Specialized cleaning services designed for hospitals and clinics, focusing on hygiene, disease prevention, and virus control.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section -->
+    <section id="projects">
+        <h2>Our Recent Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="images/clinic-project.png" alt="GreenCare Clinic">
+                <h3>GreenCare Clinic</h3>
+                <h4>Hospitals & Clinics Cleaning</h4>
+            </div>
+            <div class="project-card">
+                <img src="images/office-project.jpg" alt="BlueWave Offices">
+                <h3>BlueWave Offices</h3>
+                <h4>Office Cleaning</h4>
+            </div>
+            <div class="project-card">
+                <img src="images/house-project.jpg" alt="Sunny Home Residence">
+                <h3>Sunny Home Residence</h3>
+                <h4>House Cleaning</h4>
+            </div>
+        </div>
+        <button>See All Projects</button>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p>At <span>THE KLEANER</span>, we focus on delivering safe & reliable cleaning services with quality you can trust.</p>
+        </div>
+
+        <div class="about-image">
+            <img src="images/about_team.jpg" alt="Our team">
+        </div>
+    </section>
+    <!-- Contact section -->
+    <form id="contact-form" action="https://formspree.io/f/mbdkoqzo" method="POST">
+        <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required placeholder="Your name">
+        </div>
+        <div class="input-group">
+            <label for="tel">Phone:</label>
+            <input type="tel" name="tel" id="tel" required placeholder="Your phone number">
+        </div>
+        <div class="input-group">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" required placeholder="How can we help you?"></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+        <div class="divider">OR</div>
+        <a href="https://wa.me/21365322129?text=Hello! I'm interested in your services." 
+            target="_blank" class="whatsapp-link-btn">
+            Chat on WhatsApp
+        </a>
+    </form>
+
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2026 THE KLEANER. All rights reserved.</p>
+        <p>Contact: info@thekleaner.com | +1 123-456-7890</p>
+    </footer>
+
+</body>
+</html>

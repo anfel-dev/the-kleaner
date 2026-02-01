@@ -1,0 +1,224 @@
+/* typography, colors, spacing, layout */
+:root {
+    --primary-color: #22c55e;
+    --secondary-color: #1a4731;
+    --text-dark: #333;
+    --text-light: #4b5563;
+    --background-color: #f9f9f9;
+    --shadow-soft: 0 10px 20px rgba(0,0,0,0.05);
+    --transition: 0.3s ease;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3{
+    color: var(--secondary-color);
+}
+p{
+    color: var(--text-light);
+}
+footer p {
+    color: #ffffff;
+    opacity: 0.9; 
+}
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background-color);
+}
+section {
+    padding: 80px 10%;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+.logo span {
+    color: var(--primary-color);
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 30px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+.nav-btn {
+    background: var(--secondary-color);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0 10%;
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, #ffffff 50%, rgba(34, 197, 94, 0.1) 100%);
+    /* background: linear-gradient(135deg,#d1f9dd 0%, #ffffff 50%, #d1f9dd 100%); */
+}
+.hero-text {
+    flex: 1;
+    padding-right: 50px;
+    line-height: 1.6;
+}
+.hero-text h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--text-light);
+}
+.hero-image {
+    flex: 1;
+}
+.hero-image img {
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+.service-card {
+    background: white;
+    font-weight: 350;
+    line-height: 1.6;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border-bottom: 4px solid var(--primary-color);
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(34, 197, 94, 0.2);
+}
+.service-card img {
+    width: 180px;
+    margin: 0 auto 20px;
+}
+#projects {
+    background-color: #ffffff;
+}
+#projects button {
+    display: block;
+    margin: 0 auto;
+}
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #f0fdf4;
+    padding-bottom: 15px; 
+    transition: 0.3s;
+}
+.project-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.project-card:hover img {
+    transform: scale(1.1); 
+}
+.project-card h3 {
+    padding: 15px 15px 5px;
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+.project-card h4 {
+    padding: 0 15px;
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+#about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: #ffffff;
+}
+.about-image {
+    flex: 1;
+}
+.about-text span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.about-image img {
+    border-radius: 30px 0 30px 0;
+    box-shadow: 20px 20px 0px var(--primary-color);
+}
+.about-text {
+    flex: 1;
+}
+.about-text h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+
+footer {
+    background-color: var(--secondary-color);
+    color: white !important;
+    text-align: center;
+    padding: 40px 10%;
+}
+footer p {
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
